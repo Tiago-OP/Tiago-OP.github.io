@@ -1,49 +1,232 @@
----
-layout: default
----
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Massage Therapist</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="landing is-preload">
 
-<div class="posts">
-  {% for post in paginator.posts %}
-    <article class="post">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        <h1>{{ post.title }}</h1>
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-        <div>
-          <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
-        </div>
-      </a>
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Tiago Massage Therapist</a></h1>
+						<!-- <nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Generic</a></li>
+											<li><a href="elements.html">Elements</a></li>
+											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav> -->
+					</header>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Tiago Massage Therapist</h2>
+							<br>
+							<br>
 
-  <!-- pagination -->
-  {% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-    {% else %}
-      <span>&laquo; Prev</span>
-    {% endif %}
+							<p>Providing Remedial, sport, deep tissue, myosfacial massages.</p>
+							<br>
+							<p>L5 Remedial Massage course student at LSSM.</p>
+							<br>
+							<p> Fitzovia </p>
+							<br>
+							<p> Temporarly only 20£ per session!</p>
+							<br>
+ 							<ul class="actions special">
+								<li><a href="#cta" class="button primary">Book Now</a></li>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">Learn More</a>
+					</section>
 
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <span class="webjeda">{{ page }}</span>
-      {% elsif page == 1 %}
-        <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-      {% else %}
-        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-      {% endif %}
-    {% endfor %}
+				<!-- One -->
+					<section id="one" class="wrapper style5 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Central London - Fitzovia</h2>
+								<p>
+								<!-- Im currently doing a lvl 5 Remedial massage course in the London School of Massage.<br> I already have the knowlegde to provide a professional massage</p> -->
+								I'm thrilled to offer affordable and high-quality sports massage therapy as a student practitioner. For only £20 per massage session, you can experience the benefits of sports massage therapy without breaking the bank. Although I'm currently a student, rest assured that I bring a strong passion for sports massage and a commitment to delivering exceptional care to each client.
+						
+							</header>
+							<!-- <ul class="icons major">
+								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
+								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
+							</ul> -->
+						</div>
+					</section>
 
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-    {% else %}
-      <span>Next &raquo;</span>
-    {% endif %}
-  </div>
-  {% endif %}
-</div>
+				<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><img src="Pics/91.png" alt="" /></div><div class="content">
+								<h2>Only £20 per massage session.</h2>
+								<p>You can experience the benefits of sports massage therapy without breaking the bank. Although I'm currently a student, rest assured that I bring a strong passion for sports massage and a commitment to delivering exceptional care to each client.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="Pics/111.png" alt="" /></div><div class="content">
+								<h2>Multiple techniques</h2>
+								<p>You not only receive an affordable service but also gain access to the expertise and knowledge I've acquired during my sports massage course. I'm dedicated to honing my skills and staying up-to-date with the latest techniques to ensure you receive the best possible treatment.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="Pics/51.png" alt="" /></div><div class="content">
+								<h2>Professional service</h2>
+								<p>Experience the transformative benefits of sports massage therapy through a session with me. I create a welcoming and professional environment where you can unwind, rejuvenate, and receive the individual attention you deserve.
+								</p>
+							</div>
+						</section>
+					</section>
+
+
+
+				<!-- CTA -->
+					<section id="cta" class="wrapper style2">
+						<div class="inner">
+							<header>
+								<h2>Book now!</h2>
+								<p> I offer evening appointments during weekdays and have availability throughout the day on weekends. <br>
+									Find a time that works best for you. <br>
+									each out to me via WhatsApp or email with your preferred date and time, along with any specific requests or concerns you may have. I'll respond promptly to confirm the availability and discuss further details..</p>
+							</header>
+							<ul class="actions center">
+								<a href="https://wa.me/447577855985" class="button default  primary"><i class="fa fa-whatsapp"></i> Chat Now</a>
+								<!-- <li><a href="mailto:tiagoafb@hotmail.com" class="button fit">Send Email</a></li> -->
+							</ul>
+						</div>
+						<div class="inner">
+						<section>
+							<h4>Send Email</h4>
+							<form method="post" action="#">
+								<div class="row gtr-uniform">
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+									</div>					
+									<div class="col-12">
+										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+					</section>
+				</div>
+
+
+									<!-- Three -->
+									<!--<section id="three" class="wrapper style3 special">
+										<div class="inner">
+										-->
+																				<!-- <header class="major">
+												<h2>Book now</h2>
+												<p>I offer evening appointments during weekdays and have availability throughout the day on weekends. <br>
+												Reach out to me via WhatsApp or email with your preferred date and time, along with any specific requests or concerns you may have. I'll respond promptly to confirm the availability and discuss further details. <br></p>
+											</header>
+											<ul class="features">
+												<li class="icon fa-paper-plane">
+													<h3>Deep tissue</h3>
+													<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+												</li>
+												<li class="icon solid fa-laptop">
+													<h3>Myosfacial Release</h3>
+													<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+												</li>
+												<li class="icon solid fa-code">
+													<h3>Neuro-muscular Tecnhiques</h3>
+													<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+												</li>
+												<li class="icon solid fa-headphones-alt">
+													<h3>Muscle Energy Techniques</h3>
+													<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+												</li>
+												<li class="icon fa-heart">
+													<h3>Posture assessment</h3>
+													<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+												</li>
+												<li class="icon fa-flag">
+													<h3>Soft Tissue Release Tecniques</h3>
+													<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+												</li>
+											</ul> -->
+											<!--
+										<div class="inner">
+											<form method="post" action="#">
+												<div class="row">
+													<div class="col-6 col-12-small">
+														<input type="text" name="name" id="name" placeholder="Name" />
+													</div>
+													<div class="col-6 col-12-small">
+														<input type="text" name="email" id="email" placeholder="Email" />
+													</div>
+													<div class="col-12">
+														<input type="text" name="subject" id="subject" placeholder="Subject" />
+													</div>
+													<div class="col-12">
+														<textarea name="message" id="message" placeholder="Message"></textarea>
+													</div>
+													<div class="col-12">
+														<ul class="actions">
+															<li><input type="submit" value="Send Message" /></li>
+															<li><input type="reset" value="Clear Form" class="alt" /></li>
+														</ul>
+													</div>
+												</div>
+											</form>
+										</div>
+										</div>
+									</section> -->
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+							<li><a href="https://instagram.com/tiago.bernardo.xd" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+							<li><a href="mailto:tiagoafb@hotmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Tiago Massage Therapist</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=qdbgvlvr&n=n1.ratufa.io"></script>
+
+	</body>
+</html>
