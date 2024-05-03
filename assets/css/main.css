@@ -4009,3 +4009,64 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+	#custom
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.massage-types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.massage-type {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+    .massage-type {
+        width: 100%;
+    }
+}
+
+.numbered-list {
+    list-style: none;
+    counter-reset: my-counter;
+}
+
+.numbered-list li {
+    counter-increment: my-counter;
+    margin-bottom: 10px;
+}
+
+.numbered-list li::before {
+    content: counter(my-counter) ". ";
+    font-weight: bold;
+}
+
+.price-list {
+    list-style: none; /* Removes the bullet points */
+    padding-left: 0; /* Removes default padding */
+}
+
+.booking-section header {
+    margin-bottom: 10px; /* Reduce margin below the header */
+}
+
+.booking-section ul {
+    margin-top: 10px; /* Reduce margin above and below the ul */
+    margin-bottom: 10px;
+}
+
+.booking-section p {
+    margin-bottom: 5px; /* Reduce margin below each paragraph */
+}
+
+.booking-section ul.actions.center.stacked li {
+    margin-bottom: 5px; /* Reduce margin between action buttons */
+}
